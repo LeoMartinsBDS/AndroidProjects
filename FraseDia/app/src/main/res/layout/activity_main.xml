@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
+    tools:context="frasedodia.com.example.leonardo.frasedodia.MainActivity">
+
+
+    <Button
+        android:id="@+id/botaoNovaFraseID"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/texto_frase_dia"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp" />
+
+    <TextView
+        android:id="@+id/textoNovaFraseID"
+        android:layout_width="341dp"
+        android:layout_height="307dp"
+        android:text=""
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/texto_nova_frase"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="91dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        tools:layout_editor_absoluteX="20dp" />
+
+</android.support.constraint.ConstraintLayout>
