@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="16dp"/>
+
+    <SeekBar
+        android:id="@+id/seekBarID"
+        android:layout_width="201dp"
+        android:layout_height="39dp"
+        android:layout_centerInParent="true"
+        android:max="4"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBarID"
+        android:layout_alignStart="@+id/seekBarID"
+        android:text="Pouco"
+        android:textSize="16sp"
+        android:layout_alignLeft="@+id/seekBarID"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/seekBarID"
+        android:layout_alignTop="@+id/textView"
+        android:text="Muito"
+        android:textSize="16sp"
+        android:layout_alignRight="@+id/seekBarID"/>
+
+    <ImageView
+        android:id="@+id/imageExibicaoID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        app:srcCompat="@drawable/pouco"/>
+
+
+</RelativeLayout>
