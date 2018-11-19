@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5e9b9"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/caoID"
+        android:layout_alignStart="@+id/caoID"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_alignLeft="@+id/caoID"/>
+
+    <ImageView
+        android:id="@+id/caoID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ursoID"
+        android:layout_alignTop="@+id/gatoID"
+        app:srcCompat="@drawable/cao"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="119dp"
+        android:layout_alignLeft="@+id/ursoID"/>
+
+    <ImageView
+        android:id="@+id/gatoID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/leaoID"
+        android:layout_marginTop="79dp"
+        app:srcCompat="@drawable/gato"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="119dp"
+        android:layout_alignLeft="@+id/leaoID"/>
+
+    <ImageView
+        android:id="@+id/ursoID"
+        android:layout_width="106dp"
+        android:layout_height="104dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="51dp"
+        app:srcCompat="@drawable/bear"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="248dp"
+        android:layout_marginLeft="51dp"
+        android:layout_alignParentLeft="true"/>
+
+    <ImageView
+        android:id="@+id/leaoID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ovelhaID"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/leao"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="248dp"
+        android:layout_alignLeft="@+id/ovelhaID"/>
+
+    <ImageView
+        android:id="@+id/macacoID"
+        android:layout_width="106dp"
+        android:layout_height="81dp"
+        android:layout_alignLeft="@+id/caoID"
+        android:layout_alignStart="@+id/caoID"
+        android:layout_alignTop="@+id/ovelhaID"
+        app:srcCompat="@drawable/macaco"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="368dp"/>
+
+    <ImageView
+        android:id="@+id/ovelhaID"
+        android:layout_width="113dp"
+        android:layout_height="84dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="77dp"
+        android:layout_marginEnd="69dp"
+        app:srcCompat="@drawable/ovelha"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="368dp"
+        android:layout_marginRight="69dp"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        app:srcCompat="@drawable/direitos"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="479dp"/>
+
+
+</RelativeLayout>
