@@ -1,6 +1,7 @@
 package com.zapzap.leonardo.zapzap.helper;
 
 import android.content.Context;
+import android.util.Log;
 
 public class SharedPreferences {
 
@@ -22,12 +23,27 @@ public class SharedPreferences {
 
     }
 
+    public void cleanShared(Context context){
+
+        contexto = context;
+        preferences = contexto.getSharedPreferences(NOME_ARQUIVO, MODE);
+        preferences.edit().clear().commit();
+
+    }
+
     public void salvarDados(String identificadorUsuario, String nomeUsuario){
 
-        editor.putString(CHAVE_IDENTIFICADOR, identificadorUsuario);
-        editor.putString(CHAVE_NOME, nomeUsuario);
-        editor.commit();
+        try {
+            editor.putString(CHAVE_IDENTIFICADOR, identificadorUsuario);
+            editor.putString(CHAVE_NOME, nomeUsuario);
+            editor.commit();
+        }
+        catch (Exception ex){
+            Log.d("ERRORSHARED", ex.toString());
+        }
+
     }
+
 
     public String getIdentificador(){
         return preferences.getString(CHAVE_IDENTIFICADOR, null);

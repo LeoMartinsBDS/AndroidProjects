@@ -58,7 +58,8 @@ public class ConversasFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+        // Inflate the layout for this
+
         View view = inflater.inflate(R.layout.fragment_conversas, container, false);
 
         conversas = new ArrayList<>();
@@ -86,6 +87,7 @@ public class ConversasFragment extends Fragment {
                 //Listar contatos
                 for(DataSnapshot dados: dataSnapshot.getChildren()){
                     Conversa conversa = dados.getValue(Conversa.class);
+                    Log.d("CONVERSATAG", conversa.getNome() + conversa.getMensagem());
                     conversas.add(conversa);
                 }
                 adapter.notifyDataSetChanged();
@@ -113,7 +115,6 @@ public class ConversasFragment extends Fragment {
                 intent.putExtra("nome", conversa.getNome());
 
                 String email = Base64Custom.decodificarBase64(conversa.getIdUsuario());
-                Log.d("EMAIL", email);
 
                 intent.putExtra("email", email);
 

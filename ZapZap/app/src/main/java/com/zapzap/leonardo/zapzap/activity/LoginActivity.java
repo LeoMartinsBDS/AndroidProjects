@@ -21,6 +21,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.zapzap.leonardo.zapzap.R;
 import com.zapzap.leonardo.zapzap.config.ConfiguracaoFirebase;
 import com.zapzap.leonardo.zapzap.helper.Base64Custom;
+import com.zapzap.leonardo.zapzap.helper.SharedPreferences;
 import com.zapzap.leonardo.zapzap.model.Usuario;
 
 public class LoginActivity extends AppCompatActivity {
@@ -54,6 +55,8 @@ public class LoginActivity extends AppCompatActivity {
 
                 if(validateFields())
                     validarLogin();
+                    Toast.makeText(LoginActivity.this,"Carregando...", Toast.LENGTH_LONG).show();
+
             }
         });
 
@@ -80,19 +83,22 @@ public class LoginActivity extends AppCompatActivity {
 
                     databaseReference = ConfiguracaoFirebase.getFirebase()
                             .child("usuarios")
-                            .child(identificadorUsuarioLogado);
+                            .child(identificadorUsuarioLogado)
+                            ;
+
 
                     valueEventListener = new ValueEventListener() {
+
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
                             Usuario usuarioRecuperado = dataSnapshot.getValue( Usuario.class);
 
-                            com.zapzap.leonardo.zapzap.helper.SharedPreferences sharedPreferences = new com.zapzap.leonardo.zapzap.helper.SharedPreferences(LoginActivity.this);
+                            SharedPreferences sharedPreferences = new SharedPreferences(LoginActivity.this);
                             sharedPreferences.salvarDados(identificadorUsuarioLogado, usuarioRecuperado.getNome());
 
-
-
+                            abrirTelaPrincipal();
+                            Toast.makeText(LoginActivity.this,"Sucesso ao realizar login!", Toast.LENGTH_LONG).show();
                         }
 
                         @Override
@@ -103,8 +109,6 @@ public class LoginActivity extends AppCompatActivity {
 
                     databaseReference.addListenerForSingleValueEvent(valueEventListener);
 
-                    abrirTelaPrincipal();
-                    Toast.makeText(LoginActivity.this,"Sucesso ao realizar login!", Toast.LENGTH_LONG).show();
                 }
                 else{
 

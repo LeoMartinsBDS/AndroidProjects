@@ -181,6 +181,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void deslogarUsuario(){
 
+        SharedPreferences sharedPreferences = new SharedPreferences(MainActivity.this);
+        sharedPreferences.cleanShared(MainActivity.this);
+
         firebaseAuth.signOut();
 
         Intent intent = new Intent(MainActivity.this, LoginActivity.class);

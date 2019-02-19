@@ -71,6 +71,8 @@ public class ConversaActivity extends AppCompatActivity {
 
         idUsuarioDestinatario = Base64Custom.codificarBase64(idUsuarioDestinatario);
 
+
+
         toolbar.setTitle(nomeUsuarioDestinatario);
         toolbar.setNavigationIcon(R.drawable.ic_action_arrow_left);
         setSupportActionBar(toolbar);
@@ -99,6 +101,7 @@ public class ConversaActivity extends AppCompatActivity {
                     mensagens.add(mensagem);
                 }
                 adapter.notifyDataSetChanged();
+                listView.setSelection(adapter.getCount() - 1);
 
             }
 
@@ -148,10 +151,10 @@ public class ConversaActivity extends AppCompatActivity {
                     else{
                         //salvar conversa destinatario
 
-                        Conversa conversaDestinatario = new Conversa();
-                        conversaDestinatario.setIdUsuario(idUsuarioRemetente);
-                        conversaDestinatario.setNome(nomeUsuarioRemetente);
-                        conversaDestinatario.setMensagem(textoMensagem);
+                        conversa = new Conversa();
+                        conversa.setIdUsuario(idUsuarioRemetente);
+                        conversa.setMensagem(textoMensagem);
+                        conversa.setNome(nomeUsuarioRemetente);
 
                         Boolean retornoConversaDestinatario = salvarConversa(idUsuarioDestinatario, idUsuarioRemetente,conversa);
                         if(!retornoConversaDestinatario){

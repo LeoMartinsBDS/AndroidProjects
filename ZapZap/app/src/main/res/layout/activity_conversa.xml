@@ -18,7 +18,9 @@
         android:layout_height="wrap_content"
         android:padding="8dp"
         android:layout_below="@id/tb_conversa"
-        android:layout_above="@id/ln_mensagem"></ListView>
+        android:layout_above="@id/ln_mensagem"
+        android:transcriptMode="alwaysScroll"
+        android:stackFromBottom="true"></ListView>
 
     <LinearLayout
         android:id="@+id/ln_mensagem"
