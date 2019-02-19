@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".activity.ConversaActivity">
+
+    <include
+        android:id="@+id/tb_conversa"
+        layout="@layout/toolbar"></include>
+
+    <ListView
+        android:id="@+id/lv_conversas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_below="@id/tb_conversa"
+        android:layout_above="@id/ln_mensagem"></ListView>
+
+    <LinearLayout
+        android:id="@+id/ln_mensagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/edit_messages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Digite sua mensagem"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            />
+
+        <ImageButton
+            android:id="@+id/btnEnviarMensagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_send"
+            android:theme="@style/botaopadrao"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
