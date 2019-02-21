@@ -1,0 +1,4 @@
+#Thu Feb 21 15:28:49 BRT 2019
+base.0=C\:\\Users\\Leonardo\\Desktop\\Documentos\\Leonardo\\CURSOS\\AndroidGit\\AndroidProjects\\AndroidProjects\\AndroidBack4App\\ParseStarterProject\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
