@@ -1,0 +1,4 @@
+#Tue Feb 26 22:39:54 BRT 2019
+base.0=C\:\\Users\\Leonardo\\Desktop\\Documentos\\Leonardo\\CURSOS\\AndroidGit\\AndroidProjects\\AndroidProjects\\InstaClone\\ParseStarterProject\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

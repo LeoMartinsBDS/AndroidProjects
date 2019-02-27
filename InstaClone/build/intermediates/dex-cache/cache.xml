@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Leonardo\Desktop\AndroidBack4App\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="C:\Users\Leonardo\Desktop\AndroidBack4App\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-fe2c8b4121015c197051a13f05e75a33e6519b00.jar" />
+    </item>
+    <item
+        jar="C:\Users\Leonardo\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\Users\Leonardo\Desktop\AndroidBack4App\ParseStarterProject\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0-aa4f4d02118836b289ab2f27d9e7e2eaae1bfee2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Leonardo\.gradle\caches\modules-2\files-2.1\com.parse\parse-android\1.13.0\58a7d54b6a4f28be11f0cecec93097eddf473e6f\parse-android-1.13.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="58a7d54b6a4f28be11f0cecec93097eddf473e6f">
+        <dex dex="C:\Users\Leonardo\Desktop\AndroidBack4App\ParseStarterProject\build\intermediates\pre-dexed\debug\parse-android-1.13.0-c4b1032fc608a1be88515dc3eb3d258e34f4444b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Leonardo\Desktop\AndroidBack4App\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="C:\Users\Leonardo\Desktop\AndroidBack4App\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-92a9200dc323707956dcfee863d2fa715eef5b35.jar" />
+    </item>
+    <item
+        jar="C:\Users\Leonardo\Desktop\AndroidBack4App\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="C:\Users\Leonardo\Desktop\AndroidBack4App\ParseStarterProject\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-bc0d44d4cb15323a2161e0fca45b9e28a339857e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Leonardo\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="C:\Users\Leonardo\Desktop\AndroidBack4App\ParseStarterProject\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-90710a80c0fd4fdc9954fda452a960eb64afb58f.jar" />
+    </item>
+
+</items>

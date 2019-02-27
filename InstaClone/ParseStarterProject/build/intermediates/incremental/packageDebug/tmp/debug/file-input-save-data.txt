@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Mon Feb 25 16:05:46 BRT 2019
+0.baseType=DIRECTORY
+0.base=C\:\\Users\\Leonardo\\Desktop\\Documentos\\Leonardo\\CURSOS\\AndroidGit\\AndroidProjects\\AndroidProjects\\InstaClone\\ParseStarterProject\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.path=classes.dex
+0.set=DEX
+count=1
